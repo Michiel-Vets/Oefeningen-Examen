@@ -1,0 +1,82 @@
+Opdracht:
+
+⭐ Nieuwe opdracht: Rechthoek met 2 klassen
+
+Je maakt twee klassen:
+
+1️⃣ Klasse: Afmetingen
+
+Deze klasse bevat enkel de breedte en hoogte van een rechthoek.
+
+Eisen:
+
+Twee private variabelen:
+
+breedte
+
+hoogte
+
+Twee set-properties om deze waardes in te stellen:
+
+Breedte
+
+Hoogte
+
+Twee read-only properties om de waarden terug te geven:
+
+BreedteWaarde
+
+HoogteWaarde
+
+Deze klasse doet geen berekeningen.
+Ze bewaart alleen de afmetingen.
+
+2️⃣ Klasse: Rechthoek
+
+Deze klasse bevat een Afmetingen-object en voert op basis daarvan de berekeningen uit.
+
+Eisen:
+
+De klasse moet:
+
+een public variabele of property Afmetingen bevatten (type Afmetingen)
+
+volgende read-only properties berekenen:
+
+Oppervlakte → breedte × hoogte
+
+Omtrek → 2 × (breedte + hoogte)
+
+Diagonaal → √(breedte² + hoogte²)
+
+Verhouding → breedte / hoogte
+
+Voorbeeldgebruik
+Afmetingen a = new Afmetingen();
+a.Breedte = 3;
+a.Hoogte = 4;
+
+Rechthoek r = new Rechthoek();
+r.Afmetingen = a;
+
+Console.WriteLine($"Oppervlakte: {r.Oppervlakte}");
+Console.WriteLine($"Omtrek: {r.Omtrek}");
+Console.WriteLine($"Diagonaal: {r.Diagonaal}");
+Console.WriteLine($"Verhouding: {r.Verhouding}");
+
+Wat moet de student dus bouwen?
+✔ Klasse Afmetingen
+
+Private breedte & hoogte
+
+Set-properties voor input
+
+Get-properties voor uitlezen
+
+✔ Klasse Rechthoek
+
+Heeft een public property Afmetingen
+
+Leest breedte en hoogte uit Afmetingen
+
+Heeft vier read-only properties met berekeningen
